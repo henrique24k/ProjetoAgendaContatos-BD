@@ -56,27 +56,69 @@ namespace projetoAgendaContatos
 
             }
         }
-            public string excluir(cl_contato cont)
+        public string excluir(cl_contato cont)
+        {
+            try
             {
-                try
-                {
-                    string sql = "delete from tbcontato where codcontato = " + cont.Codcontato + " ; ";
+                string sql = "delete from tbcontato where codcontato = " + cont.Codcontato + " ; ";
 
-                    MySqlCommand cmd = new MySqlCommand(sql, c.con);
+                MySqlCommand cmd = new MySqlCommand(sql, c.con);
 
-                    c.conectar();
-                    cmd.ExecuteNonQuery();
-                    c.desconectar();
+                c.conectar();
+                cmd.ExecuteNonQuery();
+                c.desconectar();
 
-                    return ("Registro excluido com sucesso!");
-                }
-                catch (MySqlException e)
-                {
-                    return (e.ToString());
-
-                }
+                return ("Registro excluido com sucesso!");
+            }
+            catch (MySqlException e)
+            {
+                return (e.ToString());
 
             }
+
+        }
+
+        public cl_contato buscar(int codigo)
+        {
+            cl_contato cont = new cl_contato();
+
+            try
+            {
+                string sql = "select * from tbcontato where codcontato = " + codigo + " ; ";
+
+                MySqlCommand cmd = new MySqlCommand(sql, c.con);
+                c.conectar();
+
+                MySqlDataReader objDados = cmd.ExecuteReader();
+                if (!objDados.HasRows)
+                {
+                    return null;
+                }
+                else
+                {
+                    objDados.Read();
+                    cont.Codcontato = Convert.ToInt32(objDados["codcontato"]);
+                    cont.Nome = objDados["nome"].ToString();
+                    cont.Telefone = objDados["telefone"].ToString();
+                    cont.Celular = objDados["celular"].ToString();
+                    cont.Email = objDados["email"].ToString();
+
+                    objDados.Close();
+                    return cont;
+
+                }
+            }
+
+            catch(MySqlException e)
+            {
+                throw (e);
+            }
+            finally
+            {
+                c.desconectar();
+            }
+
+        }
 
     }
 }

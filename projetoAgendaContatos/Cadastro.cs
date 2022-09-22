@@ -63,5 +63,32 @@ namespace projetoAgendaContatos
             cont.Codcontato = int.Parse(txtCodigo.Text);
             MessageBox.Show(controle.excluir(cont));
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cont = controle.buscar(int.Parse(txtCodigo.Text));
+                if(cont is null)
+                {
+                    MessageBox.Show("Registro não encontrado!");
+                    limpar();
+                }
+                else
+                {
+                    txtCodigo.Text = cont.Codcontato.ToString();
+                    txtNome.Text = cont.Nome;
+                    txtTelefone.Text = cont.Telefone;
+                    txtCelular.Text = cont.Celular;
+                    txtEmail.Text = cont.Email;
+                }
+
+            }
+
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

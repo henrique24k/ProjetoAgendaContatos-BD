@@ -25,6 +25,8 @@ C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\bin\Debug\Sys
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.csproj.AssemblyReference.cache
+C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.csproj.SuggestedBindingRedirects.cache
+C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.Cadastro.resources
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.Form1.resources
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.Properties.Resources.resources
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.csproj.GenerateResource.cache
@@ -32,5 +34,3 @@ C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\pro
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.csproj.CopyComplete
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.exe
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.pdb
-C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.Cadastro.resources
-C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.csproj.SuggestedBindingRedirects.cache
