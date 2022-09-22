@@ -73,7 +73,6 @@
             this.lblTelefone.Size = new System.Drawing.Size(84, 20);
             this.lblTelefone.TabIndex = 2;
             this.lblTelefone.Text = "Telefone:";
-            this.lblTelefone.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblCelular
             // 
@@ -115,7 +114,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(343, 26);
             this.txtEmail.TabIndex = 9;
-            this.txtEmail.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // txtTelefone
             // 
@@ -124,7 +122,6 @@
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(127, 26);
             this.txtTelefone.TabIndex = 10;
-            this.txtTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // txtCelular
             // 
@@ -162,7 +159,7 @@
             this.btnExcluir.TabIndex = 15;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.button4_Click);
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnBuscar
             // 
@@ -172,7 +169,6 @@
             this.btnBuscar.TabIndex = 16;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.button5_Click);
             // 
             // Cadastro
             // 
@@ -196,7 +192,6 @@
             this.Name = "Cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
-            this.Load += new System.EventHandler(this.Cadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

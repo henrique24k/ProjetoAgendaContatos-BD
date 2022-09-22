@@ -28,36 +28,6 @@ namespace projetoAgendaContatos
             txtNome.Focus();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cadastro_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             if (txtNome.Text == "")
@@ -86,6 +56,12 @@ namespace projetoAgendaContatos
             cont.Email = txtEmail.Text;
 
             MessageBox.Show(controle.alterar(cont));
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            cont.Codcontato = int.Parse(txtCodigo.Text);
+            MessageBox.Show(controle.excluir(cont));
         }
     }
 }

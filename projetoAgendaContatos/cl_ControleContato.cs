@@ -56,6 +56,27 @@ namespace projetoAgendaContatos
 
             }
         }
+            public string excluir(cl_contato cont)
+            {
+                try
+                {
+                    string sql = "delete from tbcontato where codcontato = " + cont.Codcontato + " ; ";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, c.con);
+
+                    c.conectar();
+                    cmd.ExecuteNonQuery();
+                    c.desconectar();
+
+                    return ("Registro excluido com sucesso!");
+                }
+                catch (MySqlException e)
+                {
+                    return (e.ToString());
+
+                }
+
+            }
 
     }
 }
