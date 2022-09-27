@@ -34,3 +34,4 @@ C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\pro
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.csproj.CopyComplete
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.exe
 C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.pdb
+C:\Users\hvmar\Desktop\projetoAgendaContatos\projetoAgendaContatos\obj\Debug\projetoAgendaContatos.FormPrincipal.resources

@@ -22,6 +22,9 @@ namespace projetoAgendaContatos
             cl_Conexao conexao = new cl_Conexao();
 
             MessageBox.Show(conexao.conectar());
+
+            FormPrincipal TelaLogin = new FormPrincipal();
+            TelaLogin.ShowDialog();
         }
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
