@@ -12,6 +12,10 @@ namespace projetoAgendaContatos
 {
     public partial class Form1 : Form
     {
+        cl_contato cont = new cl_contato();
+
+        cl_ControleContato controle = new cl_ControleContato();
+
         public Form1()
         {
             InitializeComponent();
@@ -36,6 +40,37 @@ namespace projetoAgendaContatos
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulta frmConsulta = new frmConsulta();
+            frmConsulta.Show();
+        }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(controle.Backup("C:\\Backup"), "Backup do Banco de Dados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //O backup é criado no disco local c do pc
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void restauraçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.Filter = "sql files (*.sql)|*.sql|All files (*.*)|*.*";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string CaminhoBackup = openFileDialog1.FileName;
+                MessageBox.Show(controle.Retore(CaminhoBackup), "Restauração do BD",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

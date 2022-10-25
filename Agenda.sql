@@ -25,4 +25,3 @@ insert into tblogin(login,senha)values('root', 'root');
 select * from tblogin;
 
 
-

@@ -39,6 +39,7 @@ namespace projetoAgendaContatos
             this.restauraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,7 @@ namespace projetoAgendaContatos
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(219, 34);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
@@ -87,26 +88,29 @@ namespace projetoAgendaContatos
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(219, 34);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // relatórioToolStripMenuItem
             // 
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
-            this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(219, 34);
+            this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.relatórioToolStripMenuItem.Text = "Relatório";
             // 
             // backupToolStripMenuItem
             // 
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(219, 34);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.backupToolStripMenuItem.Text = "Backup";
+            this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // restauraçãoToolStripMenuItem
             // 
             this.restauraçãoToolStripMenuItem.Name = "restauraçãoToolStripMenuItem";
-            this.restauraçãoToolStripMenuItem.Size = new System.Drawing.Size(219, 34);
+            this.restauraçãoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.restauraçãoToolStripMenuItem.Text = "Restauração";
+            this.restauraçãoToolStripMenuItem.Click += new System.EventHandler(this.restauraçãoToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
@@ -122,6 +126,11 @@ namespace projetoAgendaContatos
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(60, 29);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // Form1
             // 
@@ -153,6 +162,7 @@ namespace projetoAgendaContatos
         private System.Windows.Forms.ToolStripMenuItem restauraçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
